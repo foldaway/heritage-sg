@@ -1,0 +1,22 @@
+url: ""
+baseurl: /heritage-sg
+name: Heritage SG
+description: Fast forward to the past
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+collections:
+  category:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
