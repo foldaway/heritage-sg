@@ -6,6 +6,7 @@ tags: []
 status: publish
 type: page
 published: true
+permalink: /about/
 meta: {}
 ---
 &nbsp;
