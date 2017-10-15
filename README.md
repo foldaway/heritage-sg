@@ -1,4 +1,11 @@
-# Heritage SG
-This is a website created for a Computing in Society school module project.
+# Heritage
+A blog about Singapore's heritage. Created in 2014 as a school project.
 
-It was originally run on the Squarespace platform before we used a script to export its contents to Jekyll, which was then cleaned up for static hosting.
+Original site hosted on Squarespace, now built with Jekyll using the [Tale](https://github.com/chesterhow/tale/) theme.
+
+## Writers
+- Wanching
+- Zerin
+- Huiren
+- [Jurvis](https://github.com/jurvis)
+- [Chester](https://github.com/chesterhow)
