@@ -1,18 +1,32 @@
 ---
-id: 71
-title: Posts
-date: 2014-07-24T10:05:53+00:00
-author: Duncan Leo
-layout: page
+layout: default
+title: Home
 ---
 
-<div class="home">
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% include post_preview.html %}
-    {% endfor %}
-  </ul>
+<div class="catalogue">
+  {% for post in site.posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div>
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
 
-  <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>
+        <p>
+          {{ post.content | truncatewords: 30 | strip_html }}
+        </p>
 
-</div>  
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+  {% endif %}
+
+  <span>{{ paginator.page }}</span>
+</div>

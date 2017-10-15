@@ -1,8 +1,7 @@
 url: ""
 baseurl: /heritage-sg
-name: Heritage SG
+title: Heritage SG
 description: Fast forward to the past
-theme: minima
 markdown: kramdown
 plugins:
   - jekyll-feed
@@ -20,3 +19,9 @@ defaults:
       path: "assets/images"
     values:
       image: true
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+author:
+  name:         Bottleneck Co
+  url:          https://github.com/bottleneckco
