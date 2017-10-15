@@ -1,6 +1,6 @@
 url: ""
 baseurl: /heritage-sg
-title: Heritage SG
+title: Heritage
 description: Fast forward to the past
 markdown: kramdown
 plugins:
@@ -9,8 +9,7 @@ collections:
   category:
     output: true
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: category
     values:
@@ -23,5 +22,5 @@ sass:
   sass_dir:     _sass
   style:        :compressed
 author:
-  name:         Bottleneck Co
+  name:         heritage-sg
   url:          https://github.com/bottleneckco
