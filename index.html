@@ -7,6 +7,9 @@ title: Home
   {% for post in site.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail }}" class="catalogue-thumbnail" />
+        {% endif %}
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
