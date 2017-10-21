@@ -3,6 +3,11 @@ layout: default
 ---
 
 <div class="post">
+  {% if page.featureImage %}
+    <img src="{{ page.featureImage }}">
+    <br>
+  {% endif %}
+
   <div class="post-info">
     <span>Written by</span>
     {% if page.author %}

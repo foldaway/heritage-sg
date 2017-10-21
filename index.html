@@ -7,14 +7,20 @@ title: Home
   {% for post in site.posts %}
     <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
       <div>
+        {% if post.featureImage %}
+          <img src="{{ post.featureImage }}" class="catalogue-featureImage" />
+        {% endif %}
         <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
         <h1 class="catalogue-title">{{ post.title }}</h1>
         <div class="catalogue-line"></div>
 
         <p>
-          {{ post.content | truncatewords: 30 | strip_html }}
+          {% if post.content contains '<!--more-->' %}
+    				{{ post.content | split:'<!--more-->' | first | strip_html }}
+    			{% else %}
+    				{{ post.content | truncatewords: 30 | strip_html }}
+    			{% endif %}
         </p>
-
       </div>
     </a>
   {% endfor %}
