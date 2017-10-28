@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="gallery">
+  <h1 class="post-title">Gallery</h1>
+  <div class="post-line"></div>
+
+  <div class="gallery-images">
+    {{ content | remove: '<p>' | remove: '</p>' }}
+  </div>
+</div>
+
+<div class="pagination">
+  <a href="#" class="top">Top</a>
+</div>
