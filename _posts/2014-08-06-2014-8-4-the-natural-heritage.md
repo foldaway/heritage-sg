@@ -34,7 +34,7 @@ Rubber wasn't a native type in Singapore until the Director of Singapore Botanic
 
 The oil palm was also subsequently brought in to be planted in the Singapore Botanic Gardens - which built an industry during the early part of the 20th century.
 
-![](/heritage-sg/assets/images/IMG_2886.jpg)
+![](/heritage-sg/assets/images/IMG_2886.JPG)
 
 Have you ever noticed the magnificent tree featured on our 5 dollar note? This Tembusu tree (Fagraea fragrans) now resides in the heart of the Singapore Botanic Gardens. The 30 metre tall tree is actually over 150 years old. When I was a child, whenever my parents brought me to the Gardens, just like the many other kids, I would climb atop its branch, which is so low that it almost touches the ground. Sadly, the tree has now been fenced up due to conservation purposes. This tree has indeed been a source of joy to many when they were in their adolescence and these memories will live on in our hearts for the years to come.
 
